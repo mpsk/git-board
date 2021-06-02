@@ -1,0 +1,1 @@
+export { bemPrefix } from './bem';

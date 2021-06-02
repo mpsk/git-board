@@ -1,0 +1,19 @@
+.app {
+  &__main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+  }
+
+  &__sidebar {
+    flex: 0 250px;
+    padding: 1rem;
+  }
+
+  &__content {
+    flex: 1 auto;
+    padding: 1rem;
+  }
+}

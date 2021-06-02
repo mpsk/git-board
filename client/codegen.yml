@@ -1,0 +1,29 @@
+overwrite: true
+schema: 'https://docs.github.com/public/schema.docs.graphql'
+
+documents: 'src/**/*.gql'
+
+generates:
+  src/__generated__/graphql.ts:
+    plugins:
+      - 'typescript'
+    config:
+      namingConvention: keep
+  src/:
+    hooks:
+      afterAllFileWrite:
+        - yarn prettier --write .
+    plugins:
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+    config:
+      withHooks: true
+      preResolveTypes: true
+      omitOperationSuffix: true
+      nonOptionalTypename: true
+      dedupeOperationSuffix: true
+    preset: 'near-operation-file'
+    presetConfig:
+      baseTypesPath: '__generated__/graphql.ts'
+      extension: '.ts'
+      folder: '__generated__'

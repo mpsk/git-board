@@ -1,0 +1,27 @@
+@import 'src/styles/colors.scss';
+
+.app-header {
+  background: $dark;
+  padding: 1rem;
+
+  &__logo h2,
+  &__menu-items div span {
+    color: white;
+    font-weight: 600;
+  }
+
+  &__pane {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-items {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  &__profile {
+    display: flex;
+  }
+}

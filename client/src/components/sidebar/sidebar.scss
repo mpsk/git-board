@@ -1,0 +1,17 @@
+@import 'src/styles/colors.scss';
+
+.sidebar {
+  &__link-tab {
+    text-decoration: none;
+    &.active > span {
+      background-color: $blueLight;
+    }
+  }
+
+  &__tab {
+    .ub-box-szg_border-box {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+- Add auth by github. Create AuthContext wrapper.
+  https://marmelab.com/react-admin/Authentication.html#available-providers
+
+- [] graphql requests
+
+https://docs.github.com/en/developers/apps/creating-a-github-app
+
+https://github.com/krambertech/graphql-example-app
+
+https://wanago.io/2021/03/01/graphql-apollo-client-react-typescript/
+
+https://www.freecodecamp.org/news/how-to-create-a-react-app-with-a-node-backend-the-complete-guide/
+
+https://docs.github.com/en/rest/overview/endpoints-available-for-github-apps
+
+=== Apollo
+https://www.apollographql.com/docs/react/local-state/client-side-schema/
+https://www.apollographql.com/docs/react/development-testing/static-typing/
+
+
+=== Just read. Useful.
+https://levelup.gitconnected.com/how-i-build-scalable-modern-web-applications-for-real-users-3910a3e32793
+
+==
+1. What is Apollo Link?
+2. What is Apollo Cache?

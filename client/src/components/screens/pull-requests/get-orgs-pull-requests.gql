@@ -1,0 +1,29 @@
+query GetOrgsPullRequests {
+  viewer {
+    organizations(first: 10) {
+      nodes {
+        name
+        repositories(first: 20, orderBy: { field: UPDATED_AT, direction: DESC }) {
+          nodes {
+            name
+            pullRequests(first: 5, orderBy: { field: UPDATED_AT, direction: DESC }) {
+              nodes {
+                url
+                title
+                updatedAt
+                repository {
+                  name
+                  url
+                }
+                author {
+                  login
+                  avatarUrl
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
